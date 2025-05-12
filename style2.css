@@ -1,0 +1,254 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar Section */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .logo img {
+    max-width: 150px;
+}
+
+.navbar .menu {
+    float: right;
+}
+
+.navbar .menu ul {
+    list-style: none;
+}
+
+.navbar .menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .menu ul li a:hover {
+    color: #ff6b81;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Food Search Section */
+.food-search {
+    background: #ff6b81;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.food-search h2, .food-search form {
+    margin-bottom: 20px;
+}
+
+.food-search input[type="search"] {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.food-search input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.food-search input[type="submit"]:hover {
+    background-color: #ff6b81;
+    color: #333;
+}
+
+/* Categories Section */
+.categories {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.categories .box-3 {
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+    text-align: center;
+    position: relative;
+}
+
+.categories .box-3 img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.categories .box-3:hover img {
+    transform: scale(1.05);
+}
+
+.categories .float-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Food Menu Section */
+.food-menu {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.food-menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.food-menu-box {
+    display: flex;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-menu-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.food-menu-desc {
+    padding: 15px;
+    flex: 1;
+}
+
+.food-price {
+    color: #ff6b81;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #ff6b81;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e14d63;
+}
+
+/* Social Section */
+.social {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social ul li {
+    margin: 0 10px;
+}
+
+.social ul li a img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Section */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff6b81;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .menu {
+        float: none;
+        text-align: center;
+    }
+
+    .navbar .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .categories .box-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .food-menu-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food-menu-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .food-menu-desc {
+        text-align: center;
+    }
+}
